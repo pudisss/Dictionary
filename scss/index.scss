@@ -1,0 +1,85 @@
+/* Initialize variable */
+
+/* Code begins here */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto mono";
+}
+
+.main-section {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .container {
+        overflow-y: scroll;
+        height: 500px;
+        width: 800px;
+        background-color: #eaeaea;
+        .row {
+            position: relative;
+            top: 3.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .word-input {
+                margin-left: 2.5rem;
+                margin-right: 3.5rem;
+                width: 100%;
+                height: 56px;
+                background-color: #fafafa;
+                border: none;
+                border-radius: 0.2rem;
+                font-size: 1.2rem;
+                &:focus {
+                    border: 1px solid #d4d4d4;
+                    
+                }
+                
+            }
+            .word-input::placeholder {
+                position: relative;
+                left: 2.5rem;
+            }
+    
+            .submit {
+                position: relative;
+                right: 2rem;
+                width: 100px;
+                height: 50px;
+                border: none;
+                background-color: #d4d4d4;
+                border-radius: 0.2rem;
+                cursor: pointer;
+                font-size: 1.2rem;
+            }
+        }
+        .description {
+            margin-top: 5.5rem;
+
+            margin-left: 2.5rem;
+            font-size: 20px;
+            font-weight: 500;
+            color: black;
+
+        }
+
+
+        .example {
+            
+           margin-left: 2.5rem;
+            margin-top: 2.2rem;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+
+        }
+        
+    }
+}
